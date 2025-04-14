@@ -21,7 +21,7 @@ fun CatDetailDialog(cat: Cat, onDismiss: () -> Unit) {
     Dialog(onDismissRequest = onDismiss) {
         Surface(shape = MaterialTheme.shapes.medium, tonalElevation = 4.dp) {
             Column(modifier = Modifier.padding(16.dp)) {
-                Text(text = "🐱 Mèo ID: ${cat.id}", style = MaterialTheme.typography.titleMedium)
+                Text(text = "ID: ${cat.id}", style = MaterialTheme.typography.titleMedium)
                 AsyncImage(
                     model = "https://cataas.com/cat/${cat.id}",
                     contentDescription = null,
